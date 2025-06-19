@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ujian Online Bahasa Indonesia PERGUNU Situbondo</title>
+    <title>Ujian Online PPKn PERGUNU Situbondo</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
@@ -574,7 +574,7 @@
                 border-radius: 0 !important;
                 background-image: url('https://raw.githubusercontent.com/pergunu/ujian-online/main/assets/images/certificate.png') !important;
                 background-size: cover !important;
-                background-position: center !important;
+                background_position: center !important;
                 background-repeat: no-repeat !important;
                 -webkit-print-color-adjust: exact !important;
                 print-color-adjust: exact !important;
@@ -935,11 +935,11 @@
         <div id="welcome-screen" class="card slide-in">
             <div class="header">
                 <img src="https://raw.githubusercontent.com/pergunu/ujian-online/main/assets/images/logo.png" alt="PERGUNU Logo" class="logo">
-                <h1>Ujian Online Bahasa Indonesia PERGUNU Situbondo</h1>
+                <h1>Ujian Online PPKn PERGUNU Situbondo</h1>
             </div>
             
             <div id="greeting-message">
-                <p id="greeting-text">Selamat datang di sistem ujian online Bahasa Indonesia PERGUNU Situbondo, Sistem tes kemampuan berbahasa Indonesia untuk pelajar. Silakan masukkan kode login untuk melanjutkan.</p>
+                <p id="greeting-text">Selamat datang di sistem ujian online PPKn PERGUNU Situbondo, Sistem tes kemampuan akademik untuk pelajar. Silakan masukkan kode login untuk melanjutkan.</p>
             </div>
             
             <div class="form-group">
@@ -1048,8 +1048,8 @@
                 <div class="form-group">
                     <label class="form-label">Pilih Jenis Ujian</label>
                     <div class="radio-group">
-                        <input type="radio" id="subject-indonesia" name="subject" value="Bahasa Indonesia" class="radio-option" checked>
-                        <label for="subject-indonesia" class="radio-label">Bahasa Indonesia</label>
+                        <input type="radio" id="subject-ppkn" name="subject" value="PPKn" class="radio-option" checked>
+                        <label for="subject-ppkn" class="radio-label">PPKn</label>
                     </div>
                 </div>
             </div>
@@ -1198,7 +1198,7 @@
                         <h5>Pengaturan Konten</h5>
                         <div class="form-group">
                             <label class="form-label">Pesan Pembuka</label>
-                            <textarea id="greeting-message-input" class="form-control" rows="3" style="color: #333;">Selamat datang di sistem ujian online Bahasa Indonesia PERGUNU Situbondo. Silakan masukkan kode login untuk melanjutkan.</textarea>
+                            <textarea id="greeting-message-input" class="form-control" rows="3" style="color: #333;">Selamat datang di sistem ujian online PPKn PERGUNU Situbondo. Silakan masukkan kode login untuk melanjutkan.</textarea>
                         </div>
                         <div class="form-group">
                             <label class="form-label">Pesan Informasi Berkala</label>
@@ -1270,13 +1270,13 @@
                     <div class="admin-section">
                         <h5>Aktifkan/Nonaktifkan Ujian</h5>
                         <div class="admin-control-group">
-                            <label class="admin-control-label">Bahasa Indonesia</label>
+                            <label class="admin-control-label">PPKn</label>
                             <div class="admin-toggle">
                                 <label class="toggle-switch">
-                                    <input type="checkbox" id="toggle-indonesia" checked>
+                                    <input type="checkbox" id="toggle-ppkn" checked>
                                     <span class="toggle-slider"></span>
                                 </label>
-                                <span id="indonesia-status">Aktif</span>
+                                <span id="ppkn-status">Aktif</span>
                             </div>
                         </div>
                         <button id="save-settings-btn" class="btn btn-success">Simpan Pengaturan</button>
@@ -1355,7 +1355,7 @@
             <div class="form-group">
                 <label class="form-label">Mata Ujian</label>
                 <select id="edit-subject" class="form-control" style="color: #333;">
-                    <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+                    <option value="PPKn">PPKn</option>
                 </select>
             </div>
             
@@ -1421,205 +1421,205 @@
             examDuration: 120,
             questionCount: 20,
             randomizeQuestions: true,
-            greetingMessage: "Selamat datang di sistem ujian online Bahasa Indonesia PERGUNU Situbondo. Silakan masukkan kode login untuk melanjutkan.",
+            greetingMessage: "Selamat datang di sistem ujian online PPKn PERGUNU Situbondo. Silakan masukkan kode login untuk melanjutkan.",
             adminMessage: "Tidak ada informasi terbaru saat ini.",
             chairmanName: "Moh. Nuril Hudha, S.Pd., M.Si.",
             enabledSubjects: {
-                "Bahasa Indonesia": true
+                PPKn: true
             }
         };
 
-        // Question bank structure with levels (Bahasa Indonesia only)
+        // Question bank structure with levels (PPKn only)
         let QUESTION_BANK = {
             'SD': {
-                'Bahasa Indonesia': [
+                'PPKn': [
                     {
-                        question: "Kalimat manakah yang menggunakan tanda baca titik (.) dengan benar?",
+                        question: "Pancasila sebagai dasar negara Indonesia disahkan pada tanggal...",
                         options: [
-                            "A. Ibu pergi ke pasar.",
-                            "B. Ibu pergi ke pasar?",
-                            "C. Ibu pergi ke pasar,",
-                            "D. Ibu pergi ke pasar!",
-                            "E. Ibu pergi ke pasar:"
+                            "A. 17 Agustus 1945",
+                            "B. 18 Agustus 1945",
+                            "C. 1 Juni 1945",
+                            "D. 22 Juni 1945",
+                            "E. 29 Mei 1945"
+                        ],
+                        correctAnswer: 1,
+                        explanation: "Pancasila sebagai dasar negara Indonesia disahkan pada tanggal 18 Agustus 1945 oleh PPKI (Panitia Persiapan Kemerdekaan Indonesia) sehari setelah proklamasi kemerdekaan."
+                    },
+                    {
+                        question: "Lambang sila pertama Pancasila adalah...",
+                        options: [
+                            "A. Bintang",
+                            "B. Rantai",
+                            "C. Pohon beringin",
+                            "D. Kepala banteng",
+                            "E. Padi dan kapas"
                         ],
                         correctAnswer: 0,
-                        explanation: "Tanda titik digunakan untuk mengakhiri kalimat pernyataan atau kalimat berita. Pilihan A adalah yang benar karena merupakan kalimat pernyataan yang diakhiri dengan tanda titik."
+                        explanation: "Lambang sila pertama Pancasila (Ketuhanan Yang Maha Esa) adalah bintang emas dengan lima sudut yang melambangkan cahaya kerohanian bagi seluruh rakyat Indonesia."
                     },
                     {
-                        question: "Kata manakah yang penulisannya sesuai dengan EYD?",
+                        question: "BPUPKI dibentuk pada tanggal...",
                         options: [
-                            "A. kualitas",
-                            "B. kwalitas",
-                            "C. kwalitet",
-                            "D. kualitet",
-                            "E. kwalitét"
+                            "A. 1 Maret 1945",
+                            "B. 29 April 1945",
+                            "C. 1 Juni 1945",
+                            "D. 22 Juni 1945",
+                            "E. 17 Agustus 1945"
+                        ],
+                        correctAnswer: 1,
+                        explanation: "BPUPKI (Badan Penyelidik Usaha-usaha Persiapan Kemerdekaan Indonesia) dibentuk pada tanggal 29 April 1945 sebagai persiapan untuk kemerdekaan Indonesia."
+                    },
+                    {
+                        question: "Tokoh yang mengusulkan nama Pancasila sebagai dasar negara adalah...",
+                        options: [
+                            "A. Ir. Soekarno",
+                            "B. Drs. Moh. Hatta",
+                            "C. Mr. Soepomo",
+                            "D. Mohammad Yamin",
+                            "E. K.H. Wachid Hasyim"
                         ],
                         correctAnswer: 0,
-                        explanation: "Penulisan yang benar menurut EYD adalah 'kualitas'. Kata serapan dari bahasa asing yang sudah disesuaikan dengan kaidah bahasa Indonesia."
+                        explanation: "Ir. Soekarno adalah tokoh yang pertama kali mengusulkan nama Pancasila sebagai dasar negara dalam pidatonya pada sidang BPUPKI tanggal 1 Juni 1945."
                     },
                     {
-                        question: "Kalimat manakah yang merupakan kalimat efektif?",
+                        question: "Pancasila berasal dari bahasa Sanskerta, 'panca' artinya...",
                         options: [
-                            "A. Buku itu dibaca oleh saya.",
-                            "B. Buku itu saya baca.",
-                            "C. Buku itu telah dibaca oleh saya.",
-                            "D. Buku itu sudah saya baca.",
-                            "E. Buku itu sedang dibaca oleh saya."
+                            "A. Sila",
+                            "B. Lima",
+                            "C. Dasar",
+                            "D. Pedoman",
+                            "E. Prinsip"
                         ],
                         correctAnswer: 1,
-                        explanation: "Kalimat efektif adalah kalimat yang mengungkapkan gagasan dengan jelas dan ringkas. Pilihan B ('Buku itu saya baca.') adalah yang paling efektif karena tidak menggunakan kata yang tidak perlu."
-                    },
-                    {
-                        question: "Kata manakah yang merupakan kata baku?",
-                        options: [
-                            "A. apotik",
-                            "B. apotek",
-                            "C. apothek",
-                            "D. apoték",
-                            "E. apothék"
-                        ],
-                        correctAnswer: 1,
-                        explanation: "Kata baku yang benar adalah 'apotek'. Kata ini sudah diserap ke dalam bahasa Indonesia dan penulisannya mengikuti kaidah EYD."
-                    },
-                    {
-                        question: "Kalimat manakah yang menggunakan kata depan 'di' dengan benar?",
-                        options: [
-                            "A. Buku itu ditaruh diatas meja.",
-                            "B. Buku itu ditaruh di atas meja.",
-                            "C. Buku itu ditaruh di atas-meja.",
-                            "D. Buku itu ditaruh di- atas meja.",
-                            "E. Buku itu ditaruh di'atas meja."
-                        ],
-                        correctAnswer: 1,
-                        explanation: "Kata depan 'di' yang menunjukkan tempat harus ditulis terpisah dari kata yang mengikutinya. Jadi penulisan yang benar adalah 'di atas meja'."
+                        explanation: "Kata 'panca' dalam bahasa Sanskerta berarti 'lima', sedangkan 'sila' berarti 'prinsip' atau 'dasar'. Jadi Pancasila berarti lima prinsip dasar."
                     }
                 ]
             },
             'SMP': {
-                'Bahasa Indonesia': [
+                'PPKn': [
                     {
-                        question: "Kalimat manakah yang merupakan contoh kalimat majemuk setara?",
+                        question: "Pancasila sebagai pandangan hidup bangsa mengandung arti bahwa Pancasila berfungsi sebagai...",
                         options: [
-                            "A. Ketika hujan turun, kami segera berteduh.",
-                            "B. Kami berteduh karena hujan turun.",
-                            "C. Hujan turun dan kami berteduh.",
-                            "D. Kami berteduh supaya tidak kehujanan.",
-                            "E. Meskipun hujan turun, kami tetap bermain."
+                            "A. Dasar negara",
+                            "B. Pedoman hidup sehari-hari",
+                            "C. Sumber hukum nasional",
+                            "D. Ideologi politik",
+                            "E. Lambang negara"
+                        ],
+                        correctAnswer: 1,
+                        explanation: "Sebagai pandangan hidup bangsa, Pancasila berfungsi sebagai pedoman atau petunjuk dalam kehidupan sehari-hari bagi seluruh rakyat Indonesia."
+                    },
+                    {
+                        question: "Berikut ini yang bukan termasuk nilai-nilai Pancasila sila kedua adalah...",
+                        options: [
+                            "A. Menghargai hak asasi manusia",
+                            "B. Mengakui persamaan derajat",
+                            "C. Mengembangkan sikap tenggang rasa",
+                            "D. Mengutamakan kepentingan pribadi",
+                            "E. Suka melakukan kegiatan kemanusiaan"
+                        ],
+                        correctAnswer: 3,
+                        explanation: "Sila kedua (Kemanusiaan yang Adil dan Beradab) mengajarkan untuk tidak mengutamakan kepentingan pribadi, tetapi mengutamakan kepentingan bersama dan menghargai hak orang lain."
+                    },
+                    {
+                        question: "Contoh penerapan sila ketiga Pancasila dalam kehidupan sekolah adalah...",
+                        options: [
+                            "A. Membantu teman yang kesulitan belajar",
+                            "B. Mengikuti upacara bendera dengan khidmat",
+                            "C. Tidak membeda-bedakan teman dalam bergaul",
+                            "D. Melaksanakan piket kelas sesuai jadwal",
+                            "E. Menghormati guru dan staf sekolah"
                         ],
                         correctAnswer: 2,
-                        explanation: "Kalimat majemuk setara adalah kalimat yang terdiri dari dua klausa atau lebih yang memiliki kedudukan setara. Pilihan C ('Hujan turun dan kami berteduh.') adalah contoh kalimat majemuk setara yang dihubungkan dengan konjungsi 'dan'."
+                        explanation: "Tidak membeda-bedakan teman dalam bergaul merupakan contoh penerapan sila ketiga (Persatuan Indonesia) karena menunjukkan sikap persatuan dan kesatuan tanpa membedakan suku, agama, atau latar belakang."
                     },
                     {
-                        question: "Paragraf manakah yang termasuk jenis paragraf narasi?",
+                        question: "Pancasila sebagai dasar negara berarti Pancasila berfungsi sebagai...",
                         options: [
-                            "A. Hujan deras mengguyur kota sejak pagi. Air menggenangi jalan-jalan utama. Beberapa kendaraan terjebak banjir. Warga mengungsi ke tempat yang lebih tinggi.",
-                            "B. Banjir adalah peristiwa tergenangnya daratan oleh air. Penyebab banjir antara lain curah hujan tinggi, penggundulan hutan, dan sistem drainase yang buruk.",
-                            "C. Untuk mencegah banjir, kita harus menanam pohon, tidak membuang sampah sembarangan, dan membersihkan saluran air secara rutin.",
-                            "D. Banjir sangat merugikan masyarakat. Kerugian material bisa mencapai miliaran rupiah. Selain itu, banjir juga menimbulkan berbagai penyakit.",
-                            "E. Menurut data BMKG, curah hujan tahun ini meningkat 20% dibanding tahun lalu. Peningkatan ini disebabkan oleh perubahan iklim global."
+                            "A. Pedoman hidup bermasyarakat",
+                            "B. Sumber dari segala sumber hukum",
+                            "C. Lambang persatuan bangsa",
+                            "D. Pandangan hidup bangsa",
+                            "E. Cita-cita luhur bangsa"
                         ],
-                        correctAnswer: 0,
-                        explanation: "Paragraf narasi adalah paragraf yang menceritakan suatu peristiwa atau kejadian. Pilihan A adalah contoh paragraf narasi karena menceritakan peristiwa hujan dan banjir secara kronologis."
+                        correctAnswer: 1,
+                        explanation: "Sebagai dasar negara, Pancasila berfungsi sebagai sumber dari segala sumber hukum di Indonesia, artinya semua peraturan perundang-undangan harus bersumber dan tidak bertentangan dengan Pancasila."
                     },
                     {
-                        question: "Kalimat manakah yang menggunakan kata 'apabila' dengan tepat?",
+                        question: "Makna yang terkandung dalam sila kelima Pancasila adalah...",
                         options: [
-                            "A. Apabila kamu datang, saya akan sangat senang.",
-                            "B. Apabila kamu sakit, kamu harus minum obat.",
-                            "C. Apabila kamu belajar, kamu akan lulus ujian.",
-                            "D. Apabila kamu lapar, makanlah.",
-                            "E. Apabila kamu lelah, beristirahatlah."
+                            "A. Keadilan sosial bagi seluruh rakyat Indonesia",
+                            "B. Persamaan hak dan kewajiban",
+                            "C. Kesejahteraan bersama",
+                            "D. Keadilan dalam hukum",
+                            "E. Semua jawaban benar"
                         ],
-                        correctAnswer: 0,
-                        explanation: "Kata 'apabila' lebih tepat digunakan untuk menyatakan suatu kondisi yang belum tentu terjadi atau bersifat hipotetis. Pilihan A adalah yang paling tepat karena menunjukkan suatu kondisi yang belum pasti ('apabila kamu datang')."
-                    },
-                    {
-                        question: "Kata manakah yang merupakan antonim dari kata 'menggembirakan'?",
-                        options: [
-                            "A. menyedihkan",
-                            "B. membosankan",
-                            "C. mengecewakan",
-                            "D. menyakitkan",
-                            "E. mengkhawatirkan"
-                        ],
-                        correctAnswer: 0,
-                        explanation: "Antonim dari 'menggembirakan' adalah 'menyedihkan'. Kedua kata ini memiliki makna yang berlawanan dalam konteks perasaan atau emosi."
-                    },
-                    {
-                        question: "Kalimat manakah yang menggunakan kata 'yang' dengan tepat?",
-                        options: [
-                            "A. Buku yang dibeli oleh adik sangat menarik.",
-                            "B. Adik yang membeli buku sangat menarik.",
-                            "C. Buku yang adik membeli sangat menarik.",
-                            "D. Buku adik yang membeli sangat menarik.",
-                            "E. Adik membeli buku yang sangat menarik."
-                        ],
-                        correctAnswer: 0,
-                        explanation: "Kata 'yang' berfungsi sebagai penghubung dalam kalimat untuk menerangkan kata sebelumnya. Pilihan A adalah yang paling tepat karena 'yang' menerangkan 'buku' dengan jelas."
+                        correctAnswer: 4,
+                        explanation: "Sila kelima (Keadilan Sosial bagi Seluruh Rakyat Indonesia) mengandung makna yang luas, mencakup keadilan sosial, persamaan hak dan kewajiban, kesejahteraan bersama, dan keadilan dalam hukum."
                     }
                 ]
             },
             'SMA/SMK': {
-                'Bahasa Indonesia': [
+                'PPKn': [
                     {
-                        question: "Teks manakah yang termasuk ke dalam jenis teks eksposisi?",
+                        question: "Pancasila sebagai ideologi terbuka mengandung arti bahwa Pancasila...",
                         options: [
-                            "A. Pohon itu tumbuh subur di halaman rumah. Daunnya hijau lebat. Batangnya besar dan kokoh. Setiap hari burung-burung bertengger di rantingnya.",
-                            "B. Pendidikan karakter sangat penting bagi generasi muda. Pertama, pendidikan karakter membentuk kepribadian yang baik. Kedua, pendidikan karakter meningkatkan kesadaran sosial. Ketiga, pendidikan karakter mendorong prestasi akademik.",
-                            "C. Tolong ambilkan buku itu! Jangan lupa membawa pulpen! Rapikan meja sebelum pergi! Jangan membuat keributan!",
-                            "D. Aduh, sakit sekali perutku! Wah, indah benar pemandangan ini! Astaga, kamu datang juga! Alhamdulillah, aku lulus ujian!",
-                            "E. Jika kamu belajar dengan giat, kamu akan lulus ujian. Jika kamu lulus ujian, orang tuamu akan bangga. Jika orang tuamu bangga, mereka akan memberimu hadiah."
-                        ],
-                        correctAnswer: 1,
-                        explanation: "Teks eksposisi adalah teks yang berisi pemaparan atau penjelasan tentang suatu topik disertai dengan argumen-argumen pendukung. Pilihan B adalah contoh teks eksposisi karena memaparkan pentingnya pendidikan karakter disertai dengan argumen-argumen pendukung."
-                    },
-                    {
-                        question: "Kalimat manakah yang merupakan contoh kalimat kompleks?",
-                        options: [
-                            "A. Saya membaca buku.",
-                            "B. Ibu memasak di dapur.",
-                            "C. Adik menangis karena jatuh.",
-                            "D. Ayah pergi ke kantor.",
-                            "E. Kami bermain bola."
+                            "A. Dapat diubah isinya sesuai perkembangan zaman",
+                            "B. Menerima pengaruh asing secara bebas",
+                            "C. Dapat menyesuaikan diri dengan perubahan zaman tanpa mengubah nilai dasarnya",
+                            "D. Terbuka untuk diinterpretasikan secara bebas",
+                            "E. Dapat diganti dengan ideologi lain"
                         ],
                         correctAnswer: 2,
-                        explanation: "Kalimat kompleks adalah kalimat yang terdiri dari satu klausa utama dan satu atau lebih klausa subordinatif. Pilihan C ('Adik menangis karena jatuh.') adalah contoh kalimat kompleks karena terdiri dari klausa utama 'Adik menangis' dan klausa subordinatif 'karena jatuh'."
+                        explanation: "Pancasila sebagai ideologi terbuka berarti Pancasila dapat menyesuaikan diri dengan perkembangan zaman dan tantangan baru tanpa mengubah nilai-nilai dasar yang terkandung di dalamnya."
                     },
                     {
-                        question: "Kata manakah yang merupakan kata serapan dari bahasa Arab?",
+                        question: "Berikut ini yang bukan termasuk fungsi Pancasila adalah...",
                         options: [
-                            "A. meja",
-                            "B. kursi",
-                            "C. kitab",
-                            "D. komputer",
-                            "E. televisi"
+                            "A. Sebagai dasar negara",
+                            "B. Sebagai pandangan hidup bangsa",
+                            "C. Sebagai ideologi negara",
+                            "D. Sebagai alat pemersatu bangsa",
+                            "E. Sebagai agama resmi negara"
                         ],
-                        correctAnswer: 2,
-                        explanation: "Kata 'kitab' merupakan kata serapan dari bahasa Arab (كتاب - kitāb). Kata-kata lain dalam pilihan berasal dari bahasa Portugis (meja, kursi) atau bahasa Inggris (komputer, televisi)."
+                        correctAnswer: 4,
+                        explanation: "Pancasila bukanlah agama resmi negara. Indonesia mengakui kebebasan beragama dan tidak memiliki agama resmi negara, sesuai dengan sila pertama Pancasila."
                     },
                     {
-                        question: "Kalimat manakah yang menggunakan kata 'sehingga' dengan tepat?",
+                        question: "Nilai-nilai Pancasila yang terkandung dalam pembukaan UUD 1945 alinea keempat adalah...",
                         options: [
-                            "A. Dia belajar giat sehingga lulus ujian.",
-                            "B. Dia belajar giat sehingga dia lulus ujian.",
-                            "C. Dia belajar giat sehingga dia bisa lulus ujian.",
-                            "D. Dia belajar giat sehingga dia dapat lulus ujian.",
-                            "E. Dia belajar giat sehingga dia akan lulus ujian."
+                            "A. Ketuhanan, kemanusiaan, persatuan, kerakyatan, dan keadilan",
+                            "B. Kebangsaan, internasionalisme, mufakat, kesejahteraan, dan ketuhanan",
+                            "C. Persatuan, demokrasi, keadilan, ketuhanan, dan kemanusiaan",
+                            "D. Kedaulatan rakyat, keadilan sosial, persatuan, kemanusiaan, dan ketuhanan",
+                            "E. Semua jawaban benar"
                         ],
                         correctAnswer: 0,
-                        explanation: "Kata 'sehingga' berfungsi sebagai penghubung yang menunjukkan akibat. Penggunaan yang paling efektif adalah pada pilihan A ('Dia belajar giat sehingga lulus ujian.') karena lebih ringkas tanpa pengulangan subjek."
+                        explanation: "Alinea keempat Pembukaan UUD 1945 secara tegas menyebutkan lima sila Pancasila: Ketuhanan Yang Maha Esa, Kemanusiaan yang adil dan beradab, Persatuan Indonesia, Kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan/perwakilan, serta Keadilan sosial bagi seluruh rakyat Indonesia."
                     },
                     {
-                        question: "Kata manakah yang penulisannya sesuai dengan kaidah EYD?",
+                        question: "Pancasila sebagai paradigma pembangunan berarti...",
                         options: [
-                            "A. sistim",
-                            "B. system",
-                            "C. sistem",
-                            "D. sistèm",
-                            "E. sistim"
+                            "A. Pancasila menjadi tujuan pembangunan",
+                            "B. Pancasila menjadi landasan dan arah pembangunan",
+                            "C. Pancasila menjadi ukuran keberhasilan pembangunan",
+                            "D. Pancasila menjadi alat evaluasi pembangunan",
+                            "E. Semua jawaban benar"
+                        ],
+                        correctAnswer: 4,
+                        explanation: "Sebagai paradigma pembangunan, Pancasila berfungsi sebagai landasan, arah, tujuan, ukuran keberhasilan, dan alat evaluasi pembangunan nasional di segala bidang."
+                    },
+                    {
+                        question: "Implementasi nilai-nilai Pancasila dalam kehidupan berbangsa dan bernegara di era globalisasi harus dilakukan dengan...",
+                        options: [
+                            "A. Menutup diri dari pengaruh asing",
+                            "B. Menerima semua pengaruh asing tanpa filter",
+                            "C. Menyeleksi budaya asing dengan berdasarkan nilai-nilai Pancasila",
+                            "D. Mengabaikan perkembangan global",
+                            "E. Menolak semua bentuk modernisasi"
                         ],
                         correctAnswer: 2,
-                        explanation: "Penulisan yang benar menurut EYD adalah 'sistem'. Kata ini sudah diserap sepenuhnya ke dalam bahasa Indonesia dan penulisannya mengikuti kaidah yang berlaku."
+                        explanation: "Di era globalisasi, kita harus mampu menyeleksi pengaruh asing dengan bijak berdasarkan nilai-nilai Pancasila, mengambil yang positif dan membuang yang negatif, tanpa harus menutup diri dari perkembangan global."
                     }
                 ]
             }
@@ -1627,12 +1627,12 @@
 
         // Motivational messages based on score
         const MOTIVATIONAL_MESSAGES = {
-            '90-100': 'Sempurna! Anda sangat luar biasa dalam menguasai materi Bahasa Indonesia. Pertahankan prestasi ini.',
-            '80-89': 'Hasil yang sangat baik! Anda telah menunjukkan pemahaman yang mendalam tentang Bahasa Indonesia.',
-            '70-79': 'Kerja bagus! Anda memiliki pemahaman yang baik tentang materi Bahasa Indonesia ini.',
-            '60-69': 'Hasil yang cukup baik. Tingkatkan lagi pemahaman Anda untuk hasil yang lebih baik.',
-            '50-59': 'Anda sudah memahami dasar-dasarnya. Terus berlatih untuk meningkatkan pemahaman Bahasa Indonesia Anda.',
-            '0-49': 'Jangan menyerah! Gunakan hasil ini sebagai motivasi untuk belajar Bahasa Indonesia lebih giat lagi.'
+            '90-100': 'Sempurna! Anda sangat luar biasa dalam menguasai materi PPKn. Pertahankan prestasi ini.',
+            '80-89': 'Hasil yang sangat baik! Anda telah menunjukkan pemahaman yang mendalam tentang nilai-nilai Pancasila.',
+            '70-79': 'Kerja bagus! Anda memiliki pemahaman yang baik tentang materi PPKn ini.',
+            '60-69': 'Hasil yang cukup baik. Tingkatkan lagi pemahaman Anda tentang Pancasila untuk hasil yang lebih baik.',
+            '50-59': 'Anda sudah memahami dasar-dasarnya. Terus berlatih untuk meningkatkan pemahaman tentang PPKn.',
+            '0-49': 'Jangan menyerah! Gunakan hasil ini sebagai motivasi untuk belajar lebih giat lagi tentang Pancasila dan kewarganegaraan.'
         };
         
         // Initialize the application
@@ -1955,8 +1955,8 @@
             document.getElementById('chairman-name').value = adminSettings.chairmanName;
             
             // Load subject toggle
-            document.getElementById('toggle-indonesia').checked = adminSettings.enabledSubjects["Bahasa Indonesia"];
-            document.getElementById('indonesia-status').textContent = adminSettings.enabledSubjects["Bahasa Indonesia"] ? 'Aktif' : 'Nonaktif';
+            document.getElementById('toggle-ppkn').checked = adminSettings.enabledSubjects.PPKn;
+            document.getElementById('ppkn-status').textContent = adminSettings.enabledSubjects.PPKn ? 'Aktif' : 'Nonaktif';
         }
         
         function saveParticipantsData() {
@@ -2116,12 +2116,12 @@
                 examDate: new Date().toISOString()
             };
             
-            // Load questions based on level - hanya Bahasa Indonesia
-            if (participantData.level && QUESTION_BANK[participantData.level]['Bahasa Indonesia']) {
-                questions = QUESTION_BANK[participantData.level]['Bahasa Indonesia'];
+            // Load questions based on level - hanya PPKn
+            if (participantData.level && QUESTION_BANK[participantData.level]['PPKn']) {
+                questions = QUESTION_BANK[participantData.level]['PPKn'];
             } else {
                 // Default questions
-                questions = QUESTION_BANK['SD']['Bahasa Indonesia'];
+                questions = QUESTION_BANK['SD']['PPKn'];
             }
             
             // Randomize questions if setting is enabled
@@ -2445,10 +2445,10 @@
                     <h2 class="certificate-recipient">${formatName(participantData.fullname)}</h2>
                     <p class="certificate-body">
                         Atas Partisipasi & Pencapaian Luar Biasa Dalam<br>
-                        Ujian Bahasa Indonesia Pergunu Situbondo
+                        Ujian PPKn Pergunu Situbondo
                     </p>
                     <p class="certificate-body">
-                        Sebagai penghargaan atas dedikasi dalam memahami materi ujian dan mengasah kemampuan berbahasa, 
+                        Sebagai penghargaan atas dedikasi dalam memahami materi ujian dan mengasah logika, 
                         sertifikat ini diberikan sebagai motivasi untuk terus berkembang.
                     </p>
                     <div class="certificate-score">Nilai: ${score}%</div>
@@ -2940,7 +2940,7 @@
             
             // Update subject toggle
             adminSettings.enabledSubjects = {
-                "Bahasa Indonesia": document.getElementById('toggle-indonesia').checked
+                PPKn: document.getElementById('toggle-ppkn').checked
             };
             
             // Save to localStorage
